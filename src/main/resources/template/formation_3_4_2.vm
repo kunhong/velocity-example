@@ -1,0 +1,13 @@
+#set( $formationPositions = [
+        {"pos" : "10", "startings" : [1.0001, 1.0002]},
+        {"pos" : "20", "startings" : [2.0001, 2.0002]},
+        {"pos" : "30", "startings" : [3.0001, 3.0002]},
+        {"pos" : "40", "startings" : [4.0001, 4.0002]},
+        {"pos" : "50", "startings" : [5.0001, 5.0002]},
+        {"pos" : "60", "startings" : [6.0001, 6.0002]},
+        {"pos" : "70", "startings" : [7.0001, 7.0002]},
+        {"pos" : "80", "startings" : [8.0001, 8.0002]},
+        {"pos" : "90", "startings" : [9.0001, 9.0002]},
+        {"pos" : "100", "startings" : [10.0001, 10.0002]}
+    ]
+)

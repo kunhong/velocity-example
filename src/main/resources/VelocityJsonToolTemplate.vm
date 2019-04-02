@@ -1,0 +1,11 @@
+#foreach( $key in $json.keys() )
+    Key : $key
+    Value : $json.get($key)
+#end
+
+#set ($addressList = $json.get('address'))
+#foreach( $address in $addressList )
+    zip : $address.get('zip')
+    city : $address.get('city')
+    street : $address.get('street')
+#end

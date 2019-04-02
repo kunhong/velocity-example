@@ -1,0 +1,22 @@
+#define( $formationVM )/src/main/resources/template/${formationName}.vm#end
+#parse( $formationVM )
+
+#if ( $formationPositions.size() == $currentTeamPositions.size())
+
+[
+#foreach ( $teamPosition in $formationPositions )
+    #set ( $count = ($velocityCount - 1) )
+    #getTeamPosition($teamPosition $currentTeamPositions.get($count))#if( $foreach.hasNext ),#end
+#end
+]
+
+#end
+
+#macro( getTeamPosition $teamPosition $currPosition)
+{
+    "id" : "$currPosition.getId()",
+    "_id" : "$currPosition.get_id()",
+    "pos" : $teamPosition["pos"],
+    "startings" : $teamPosition["startings"]
+}
+#end
